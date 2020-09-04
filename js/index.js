@@ -15,5 +15,5 @@ function _read(_path) {
 }
 
 contexts.set(
-  constants.EXAMPLE_CONTEXT_URL,
-  _read('../contexts/example-v1.jsonld'));
+  constants.CIT_CONTEXT_URL,
+  _read('../contexts/cit-v1.jsonld'));

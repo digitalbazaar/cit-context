@@ -1,8 +1,8 @@
-# Context Template Repository _(context-template)_
+# Concealed Id Token context _(cit-context)_
 
-<!-- [![NPM Version](https://img.shields.io/npm/v/context-template.svg?style=flat-square)](https://npm.im/context-template) -->
+<!-- [![NPM Version](https://img.shields.io/npm/v/cit-context.svg?style=flat-square)](https://npm.im/cit-context) -->
 
-> A GitHub template repository for JSON-LD contexts.
+> Concealed Id Token context for JSON-LD.
 
 
 ## Table of Contents
@@ -26,25 +26,25 @@ Requires Node.js 10+
 To install via NPM:
 
 ```
-npm install context-template
+npm install cit-context
 ```
 
 ## Usage
 
 ```js
-const exampleContext = require('context-template');
+const citContext = require('cit-context');
 
 // use URL in a JSON-LD context
 const obj = {
   "@context": [
-    exampleContext.constants.EXAMPLE_CONTEXT_URL,
+    citContext.constants.CIT_CONTEXT_URL,
     // ...
   ],
   // ...
 };
 
 // get context data for a specific context
-const data = exampleContext.contexts.get('https://w3id.org/example/v1');
+const data = citContext.contexts.get('https://w3id.org/cit/v1.jsonld');
 // ...
 ```
 
@@ -55,7 +55,7 @@ applications.
 
 The library exports two properties:
 - `constants`: A Object that maps constants to well-known context URLs. The
-  main constant `EXAMPLE_CONTEXT_URL` may be updated from time to time to the
+  main constant `CIT_CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
 
