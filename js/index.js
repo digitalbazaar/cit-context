@@ -3,9 +3,8 @@
 const constants = require('./constants');
 const fs = require('fs');
 const path = require('path');
-
-exports.constants = constants;
-const contexts = exports.contexts = new Map();
+const {CIT_CONTEXT_URL, CIT_CBORLD_APP_CONTEXT_VALUE} = constants;
+const {documentLoader} = require('./documentLoader');
 
 function _read(_path) {
   return JSON.parse(
@@ -14,6 +13,15 @@ function _read(_path) {
       {encoding: 'utf8'}));
 }
 
-contexts.set(
-  constants.CIT_CONTEXT_URL,
-  _read('../contexts/cit-v1.jsonld'));
+const contexts = new Map();
+contexts.set(constants.CIT_CONTEXT_URL, _read('../contexts/cit-v1.jsonld'));
+
+const appContextMap = new Map();
+appContextMap.set(CIT_CONTEXT_URL, CIT_CBORLD_APP_CONTEXT_VALUE);
+
+module.exports = {
+  constants,
+  contexts,
+  appContextMap,
+  documentLoader
+}
