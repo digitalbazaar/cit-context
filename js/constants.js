@@ -1,3 +1,3 @@
 'use strict';
 
-exports.EXAMPLE_CONTEXT_URL = 'https://w3id.org/example/v1';
+exports.CIT_CONTEXT_URL = 'https://w3id.org/cit/v1.jsonld';

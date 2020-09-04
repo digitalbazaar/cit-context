@@ -1,7 +1,7 @@
 {
-  "name": "context-template",
+  "name": "cit-context",
   "version": "0.0.1",
-  "description": "Context template repository.",
+  "description": "Concealed Id Token context for JSON-LD.",
   "main": "js",
   "module": "./dist/module.js",
   "files": [
@@ -12,17 +12,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/context-template"
+    "url": "https://github.com/digitalbazaar/cit-context"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/context-template/issues"
+    "url": "https://github.com/digitalbazaar/cit-context/issues"
   },
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
-  "homepage": "https://github.com/digitalbazaar/context-template#readme",
+  "homepage": "https://github.com/digitalbazaar/cit-context#readme",
   "license": "SEE LICENSE IN LICENSE.md",
   "devDependencies": {
     "eslint": "^6.0.1",
