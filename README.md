@@ -32,19 +32,21 @@ npm install cit-context
 ## Usage
 
 ```js
-const citContext = require('cit-context');
+const {
+  contexts, constants, appContextMap, documentLoader
+} = require('cit-context');
 
 // use URL in a JSON-LD context
 const obj = {
   "@context": [
-    citContext.constants.CIT_CONTEXT_URL,
+    constants.CIT_CONTEXT_URL,
     // ...
   ],
   // ...
 };
 
 // get context data for a specific context
-const data = citContext.contexts.get('https://w3id.org/cit/v1.jsonld');
+const data = contexts.get('https://w3id.org/cit/v1.jsonld');
 // ...
 ```
 
@@ -58,6 +60,8 @@ The library exports two properties:
   main constant `CIT_CONTEXT_URL` may be updated from time to time to the
   latest context location.
 - `contexts`: A `Map` that maps URLs to full context data.
+- `appContextMap`: For use with `cborld` library.
+- `documentLoader`
 
 ## Commercial Support
 
