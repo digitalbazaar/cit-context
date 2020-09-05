@@ -1,8 +1,7 @@
-const fs = require('fs');
+'use strict';
 
 const {CIT_CONTEXT_URL} = require('./constants');
-const CIT_CONTEXT = JSON.parse(
-  fs.readFileSync('../contexts/cit-v1.jsonld', 'utf8'));
+const CIT_CONTEXT = require('../contexts/cit-v1.jsonld');
 
 module.exports = {
   documentLoader(url) {
