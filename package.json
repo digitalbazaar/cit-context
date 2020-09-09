@@ -55,7 +55,7 @@
   "scripts": {
     "build": "npm run clean && webpack && rollup -c",
     "clean": "rm -rf dist/*",
-    "lint": "eslint js tests",
+    "lint": "eslint .",
     "prepare": "npm run build",
     "test": "npm run lint && npm run build && npm run test-node && npm run test-karma",
     "test-karma": "karma start tests/karma.conf.js",
