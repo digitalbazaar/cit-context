@@ -21,7 +21,7 @@ See also (related specs):
 
 ## Install
 
-Requires Node.js 10+
+Requires Node.js 14+
 
 To install via NPM:
 
@@ -46,7 +46,7 @@ const obj = {
 };
 
 // get context data for a specific context
-const data = contexts.get('https://w3id.org/cit/v1.jsonld');
+const data = contexts.get('https://w3id.org/cit/v1');
 // ...
 ```
 
