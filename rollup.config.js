@@ -11,7 +11,12 @@ export default {
     commonjs({
       // explicitly list exports otherwise only have 'default'
       namedExports: {
-        'dist/context.js': ['contexts', 'constants']
+        'dist/context.js': [
+          'constants',
+          'contexts',
+          'appContextMap',
+          'documentLoader'
+        ]
       }
     })
   ]
