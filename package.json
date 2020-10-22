@@ -1,6 +1,6 @@
 {
   "name": "cit-context",
-  "version": "1.0.1-0",
+  "version": "1.0.1",
   "description": "Concealed Id Token context for JSON-LD.",
   "main": "dist/context.js",
   "module": "./dist/context.esm.js",
