@@ -5,7 +5,7 @@
     "ConcealedIdTokenCredential": "https://w3id.org/cit#ConcealedIdTokenCredential",
     "concealedIdToken": {
       "@id": "https://w3id.org/cit#concealedIdToken",
-      "@type": "@id"
+      "@type": "https://w3id.org/security#multibase"
     },
     "ConcealedIdToken": {
       "@id": "https://w3id.org/cit#ConcealedIdToken",
