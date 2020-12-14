@@ -15,6 +15,9 @@
         "payload": {"@id": "https://w3id.org/cit#payload", "@type": "https://w3id.org/security#multibase"}
       }
     },
+    "Ed25519VerificationKey2020": {
+      "@id": "https://w3id.org/security#Ed25519VerificationKey2020"
+    },
     "Ed25519Signature2020": {
       "@id": "https://w3id.org/security#Ed25519Signature2020",
       "@context": {
