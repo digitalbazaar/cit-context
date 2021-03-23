@@ -2,14 +2,14 @@
 
 const context = require('../contexts/cit-v1.jsonld');
 const constants = require('./constants');
-const {CIT_CONTEXT_URL, CBORLD_APP_CONTEXT_VALUE} = constants;
+const {CONTEXT_URL, CBORLD_CODEC_VALUE} = constants;
 const {documentLoader} = require('./documentLoader');
 
 const contexts = new Map();
-contexts.set(constants.CIT_CONTEXT_URL, context);
+contexts.set(constants.CONTEXT_URL, context);
 
 const appContextMap = new Map();
-appContextMap.set(CIT_CONTEXT_URL, CBORLD_APP_CONTEXT_VALUE);
+appContextMap.set(CONTEXT_URL, CBORLD_CODEC_VALUE);
 
 module.exports = {
   constants,

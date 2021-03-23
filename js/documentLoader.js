@@ -1,11 +1,11 @@
 'use strict';
 
-const {CIT_CONTEXT_URL} = require('./constants');
+const {CONTEXT_URL} = require('./constants');
 const CIT_CONTEXT = require('../contexts/cit-v1.jsonld');
 
 module.exports = {
   documentLoader(url) {
-    if(url !== CIT_CONTEXT_URL) {
+    if(url !== CONTEXT_URL) {
       throw new Error(`Loading document "${url}" is not allowed.`);
     }
 
