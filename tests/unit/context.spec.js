@@ -9,8 +9,6 @@ const {
 
 const contextUrl = constants.CONTEXT_URL;
 
-console.log(appContextMap);
-
 describe('Concealed Id Token Context', () => {
   it('constants', async () => {
     expect(constants).to.exist();
