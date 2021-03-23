@@ -45,6 +45,10 @@ const obj = {
   // ...
 };
 
+// Codec term map value for CBOR-LD
+constants.CBORLD_CODEC_VALUE
+// 0x15
+
 // get context data for a specific context
 const data = contexts.get('https://w3id.org/cit/v1');
 // ...
