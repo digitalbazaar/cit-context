@@ -1,6 +1,6 @@
 # cit-context ChangeLog
 
-## 2.0.0 -
+## 2.0.0 - 2021-03-24
 
 ### Changed
 - **BREAKING**: Changed CBOR-LD codec value from `0x8000` to `0x15` to match 
