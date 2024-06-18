@@ -9,6 +9,7 @@
     "dist/context.js",
     "dist/context.esm.js",
     "js/constants.js",
+    "js/documentLoader.js",
     "js/index.js"
   ],
   "repository": {
