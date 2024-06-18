@@ -1,5 +1,10 @@
 # cit-context ChangeLog
 
+## 2.0.1 - 2024-06-xx
+
+### Fixed
+- Change context `@protected` value to boolean.
+
 ## 2.0.0 - 2021-03-24
 
 ### Changed
