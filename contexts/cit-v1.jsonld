@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@protected": "true",
+    "@protected": true,
     "type": "@type",
     "ConcealedIdTokenCredential": "https://w3id.org/cit#ConcealedIdTokenCredential",
     "concealedIdToken": {
